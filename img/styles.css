@@ -1,0 +1,549 @@
+/* =====================
+   Global Styles
+===================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Limit content width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* =====================
+   Header
+===================== */
+header {
+    background: linear-gradient(to right, #111, #000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #AB9CB8;
+    box-shadow: 0 2px 15px rgba(98, 0, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-title h1 {
+    font-size: 1.8rem;
+    color: #AB9CB8;
+    text-shadow: 0 0 10px #AB9CB8;
+}
+
+/* Navigation */
+nav a {
+    color: #f1f1f1;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 20px; /* increase this number to make it bigger */
+}
+
+nav a:hover,
+nav a.active {
+    color: #AB9CB8;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #AB9CB8;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+/* =====================
+   Hero Section
+===================== */
+.hero {
+    height: 75vh;
+    background: url('https://cdn.cloudflare.steamstatic.com/steam/apps/1971870/ss_03e4f1ba2700329092a3c11fe73390120ae89496.1920x1080.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    background: linear-gradient(to right, #AB9CB8, #AB9CB8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px rgba(98, 0, 255, 0.2);
+}
+
+/* =====================
+   CTA Buttons
+===================== */
+.cta-buttons a {
+    margin: 10px;
+    padding: 12px 28px;
+    background: #AB9CB8;
+    border: none;
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons a:hover {
+    background: #AB9CB8;
+    color: #fff;
+    box-shadow: 0 0 15px #AB9CB8;
+}
+
+/* =====================
+   Section Styling
+===================== */
+.section {
+    padding: 70px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #AB9CB8;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(98, 0, 255, 0.2);
+}
+
+/* =====================
+   Character Grid
+===================== */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 50px;
+    transform: scale(0.9);
+    transform-origin: top center;
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.character-card {
+    width: 90px;
+    height: 150px;
+    background-color: #111;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.character-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.character-card:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 20px #AB9CB8;
+}
+
+.character-card.selected {
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+}
+
+/* =====================
+   Kameo Grid
+===================== */
+.kameo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.kameo {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #333;
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kameo img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.kameo:hover {
+    transform: scale(1.15);
+    border-color: #AB9CB8;
+    box-shadow: 0 0 20px #AB9CB8;
+}
+
+.roster-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+/* =====================
+   Guides
+===================== */
+.mk-guide {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(98, 0, 255, 0.2);
+}
+
+.mk-guide h2 {
+    font-size: 1.8em;
+    color: #AB9CB8;
+    margin-top: 30px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.mk-guide p {
+    line-height: 1.7;
+    font-size: 1.05em;
+    color: #ddd;
+}
+
+.pro-tip {
+    background: rgba(98, 0, 255, 0.2);
+    border-left: 4px solid #AB9CB8;
+    padding: 12px;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.video-thumb { 
+    display: inline-block; 
+    margin-top: 10px; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, border-color 0.3s ease; 
+} 
+
+.video-thumb img { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+} 
+
+.video-thumb:hover { 
+    transform: scale(1.03); 
+    border-color: #ff6600; 
+}
+
+/* =====================
+   Footer
+===================== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Use flexbox layout */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content grows to fill space */
+main {
+  flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: #777;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* =====================
+   About Me
+===================== */
+
+#about-me {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+#about-me h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about-me p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if you have height */
+  margin-bottom: 20px;
+}
+
+
+.about-photo {
+  width: 200px;       /* adjust size */
+  border-radius: 10px; /* optional for style */
+  margin-bottom: 20px; /* space below the photo */
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+#socials {
+  color: #fff;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#socials h2 {
+  font-family: 'Orbitron', sans-serif; /* fits your gaming theme */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* space between links */
+}
+
+.social-list li a {
+  text-decoration: none;
+  color: #00adef;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-list li a:hover {
+  color: #ff1a1a; /* changes on hover */
+  transform: scale(1.1);
+}
+
+/* =====================
+   Mobile Display
+===================== */
+
+/* Tablets and small laptops */
+/* Phones */
+@media (max-width: 1440px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  .hero {
+    height: 50vh;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .grid-container {
+    transform: scale(0.9); /* shrink the whole roster */
+    transform-origin: top center; /* keep it centered */
+    padding: 0; /* reduce padding so it fits */
+  }
+
+  .row {
+    flex-wrap: wrap; /* cards wrap instead of forcing one row */
+    justify-content: center;
+  }
+
+  .character-card {
+    width: 70px;   /* smaller than desktop */
+    height: 115px; /* proportional height */
+  }
+
+  .kameo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #about-me {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  #about-me h1 {
+    font-size: 1.8rem;
+  }
+
+  #about-me p {
+    font-size: 1rem;
+  }
+
+  .social-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+    .logo-title {
+    flex-direction: column; /* stack image above text */
+    gap: 8px;
+    text-align: center;
+  }
+
+  .logo-title img {
+    max-width: 120px;  /* smaller logo */
+    height: auto;
+  }
+
+  .logo-title h1 {
+    font-size: 1.4rem; /* shrink text slightly */
+    white-space: normal; /* allow wrapping instead of cutting off */
+  }
+}
+
+
+/* Phones */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  .hero {
+    height: 50vh;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .grid-container {
+    transform: scale(0.9); /* shrink the whole roster */
+    transform-origin: top center; /* keep it centered */
+    padding: 0; /* reduce padding so it fits */
+  }
+
+  .row {
+    flex-wrap: wrap; /* cards wrap instead of forcing one row */
+    justify-content: center;
+  }
+
+  .character-card {
+    width: 90px;
+    height: 150px;
+  }
+
+  .kameo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #about-me {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  #about-me h1 {
+    font-size: 1.8rem;
+  }
+
+  #about-me p {
+    font-size: 1rem;
+  }
+
+  .social-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+    .logo-title {
+    flex-direction: column; /* stack image above text */
+    gap: 8px;
+    text-align: center;
+  }
+
+  .logo-title img {
+    max-width: 120px;  /* smaller logo */
+    height: auto;
+  }
+
+  .logo-title h1 {
+    font-size: 1.4rem; /* shrink text slightly */
+    white-space: normal; /* allow wrapping instead of cutting off */
+  }
+}

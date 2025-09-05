@@ -1,0 +1,16 @@
+To Do List:
+- Add back everything I lost (import database) ✅ 
+- Remake the about page / reformat the entire website ✅ 
+- Download FMODEL to get the character roster portraits ✅ 
+- Organize Files ✅ 
+- Make a read me file ✅ 
+- Update all characters frame data ✅ 
+- Update all kameo frame data ✅ 
+- How would this website look on mobile? ✅
+- Add a Notation Explaination Section ✅ 
+
+Future Implementations
+- Add T-1000 and Madam Bo Frame data
+- Add a General Summary, Pros and Cons, and Combos for each character
+- Add a picture/gif of each normal displayed in the frame data section
+- Add a news section to keep players up to date with NRS News, Tournaments, etc
