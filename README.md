@@ -1,89 +1,72 @@
-This project is a fan-made web application built to teach beginners how to get started with Mortal Kombat 1 (MK1). It recreates elements of the character select screen, kameo assist system, and gameplay guides to give new players a familiar and engaging learning environment.
+# 🥋 Mortal Kombat 1 Beginner Hub (Fan Project)
 
-The goal of this project is to make the learning curve of MK1 less intimidating by providing:
+This project is a **fan-made web application** built to help beginners get started with *Mortal Kombat 1 (MK1)*.  
+It recreates elements of the **character select screen**, **Kameo assist system**, and **beginner-friendly guides** to create a familiar and engaging learning environment.  
 
-A clean, interactive character roster styled like the in-game select screen.
+---
 
-A Kameo Fighter grid with hover effects that visually pop.
+## 🎯 Purpose
 
-Guides, tutorials, and embedded video links presented in a fighting-game inspired layout.
+Mortal Kombat has deep mechanics and a steep learning curve. For new players, the sheer number of **characters, Kameos, and combos** can feel overwhelming.  
+This project aims to make learning **less intimidating** by providing:
 
-This website serves as a central educational hub for new players, bridging the gap between raw game mechanics and practical application.
+- ✅ A clean, interactive **character roster** styled like the in-game select screen.  
+- ✅ A **Kameo Fighter grid** with hover effects that visually pop.  
+- ✅ **Guides & tutorials** presented in a fighting game–inspired layout.  
+- ✅ **Video integration** for easier access to learning content.  
 
-🎯 Why This Project is Important
+By blending **design with gameplay education**, this project helps bridge the gap between **raw mechanics** and **practical application**.  
 
-Mortal Kombat has always been a franchise with deep mechanics and complex systems. For beginners, the sheer number of characters, Kameos, and combos can feel overwhelming.
+---
 
-This project is important because it:
+## 🛠️ Skills & Technologies
 
-Makes information more accessible by presenting it in a visual, interactive way.
+### ⚙️ Web Development
+- **HTML5** – Structure for character grids, news sections, and guides.  
+- **CSS3** – Styling, hover effects, gradients, responsive layouts.  
+- **Flexbox & CSS Grid** – Layout for roster and Kameo select screen.  
+- **Responsive Design** – Works on desktop, tablet, and mobile.  
 
-Recreates the familiar MK1 interface, so players can learn in an environment they instantly recognize.
+### 🎨 Design & Styling
+- **Game-inspired UI/UX** – Styled after MK1’s select screen.  
+- **Hover & transition effects** – Smooth, interactive animations.  
+- **Color theory** – Dark backgrounds with neon accents (purple, crimson, gold).  
+- **Image optimization** – Cropped & resized character renders for sharp display.  
 
-Encourages exploration — new players can hover, click, and learn without walls of text.
+### 🔗 Integrations
+- **Video embeds** – Clickable thumbnails linked to guides/tutorials.  
 
-Serves as a portfolio project, demonstrating front-end development skills and game-inspired UI/UX design.
+### 📚 Soft Skills
+- **Problem-solving** – Responsive scaling, hover states, image proportions.  
+- **Attention to detail** – Faithful recreation of MK1 roster styling.  
+- **UI/UX thinking** – Focus on clarity for beginners.  
+- **Documentation** – Clear code structure & explanations.  
 
-By merging design with gameplay education, this project shows how fan communities can make competitive games friendlier and more welcoming.
+---
 
-🛠️ Skills & Technologies Used
+## ✨ Features
 
-This project applies a wide range of front-end development and design skills:
+- 🎮 **Character Roster** – Grid styled like MK1’s select screen.  
+- 🥷 **Kameo Roster** – Circular icons with hover glow/expand effects.  
+- 📖 **Beginner Guides** – Easy-to-read tutorials styled like a fighting manual.  
+- ▶️ **Video Integration** – Thumbnail previews linked to educational videos.  
+- 📱 **Responsive Layout** – Scales across desktop & mobile.  
+- 🎨 **MK-Themed Styling** – Fonts, colors, and effects inspired by the game.  
 
-⚙️ Web Development
+---
 
-HTML5 – For structuring content such as character grids, news sections, and guides.
+## 👨‍💻 Author
 
-CSS3 – For styling, hover effects, gradients, responsive layouts, and themed design.
+**Omarcus "PureFGC" Swims Jr**  
+Passionate about:  
+- Fighting games  
+- Front-end development  
+- Creating beginner-friendly learning tools  
 
-Flexbox & Grid Layouts – Used to create the roster and Kameo select screen.
+---
 
-Responsive Design – Ensures usability across desktop, tablet, and mobile.
+## ⚖️ Disclaimer
 
-🎨 Design & Styling
-
-Game-inspired UI/UX – The site mimics Mortal Kombat 1’s select screen aesthetic.
-
-Hover & Transition Effects – Smooth animations when interacting with cards and icons.
-
-Color Theory – Dark backgrounds with neon accents (crimson, green, gold) to evoke MK’s visual identity.
-
-Image Optimization – Character renders were cropped, resized, and adjusted for sharper quality.
-
-🔗 Integrations & Content
-
-Video Embeds – Guides and tutorials linked via preview images that open educational videos.
-
-📚 Soft Skills
-
-Problem-Solving – Troubleshooting hover effects, image proportions, and responsive scaling.
-
-Attention to Detail – Accurately replicating MK1’s roster styling.
-
-UI/UX Thinking – Designing for new players who need simplicity and clarity.
-
-Documentation – Writing clear code structure and project explanation.
-
-✨ Features
-
-✅ Character Roster – Styled like the in-game grid, with hover animations and selection states.
-✅ Kameo Roster – Circular icons that glow and expand when hovered over.
-✅ Beginner Guides – Easy-to-read text styled like a fighting game manual.
-✅ Video Integration – Clickable thumbnails instead of plain text links.
-✅ Responsive Layout – Works across devices.
-✅ Thematic Styling – Fonts, colors, and shadows that feel like Mortal Kombat.
-
-👨‍💻 Author
-
-This project was created by Omarcus (PureFGC) Swims Jr, a developer passionate about:
-
-Fighting games
-
-Front-end development
-
-Building beginner-friendly learning tools
-
-⚖️ Disclaimer
-
-This is a fan project. All Mortal Kombat content, characters, and assets are the property of NetherRealm Studios and Warner Bros. Games.
-This site is purely educational and non-commercial.
+This is a **fan project**.  
+All *Mortal Kombat* content, characters, and assets are the property of **NetherRealm Studios** and **Warner Bros. Games**.  
+This site is **educational and non-commercial**.  
